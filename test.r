@@ -107,5 +107,5 @@ switcheroo.if.then <- function (x) {if (x == "du") "dugong" else if (x == "bd") 
 fishdata <- load(file="fish_data (8).Rdata")
 NROW (fish)
 NCOL(fish)
-
+f <-fish [parcel.l $group =="fish,"]$transect.id6
 
