@@ -54,7 +54,8 @@ is.na(r)
 #this was assigned NA to create a NA output
 l <- N
 oi <- c(1, 2, 3, NaN, 5)
-#this will result in a NaN because the fourth spot is NaN
+sum(oi)
+#this sum will result in a NaN because the fourth spot is NaN
 j <- c(5, 6, 7, NULL)
 c <-NULL
 #this was assigned to NULL resulting in a NULL output
@@ -121,3 +122,11 @@ class(z)
 l <-as.character(z)
 class(l)
 #I assigned a value to z which encompassed the fish area_fac data, then I assigned l to be the character version of z, and the class of that is a character data type
+t <-fish$avg.DNE.m
+str(fish)
+load (fish)
+p<-(fish)rm(t)
+p <-rm(t)(fish)
+fish$avg.DNE.m = NULL
+str(fish)
+#I first used the data frame fish then attached the column avg.DNE.m by assigning to NULL, then, in order to check the structure. 
