@@ -100,3 +100,4 @@ fishdata <- load(file="fish_data (8).Rdata")
 NROW (fish)
 NCOL(fish)
 
+
