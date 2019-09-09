@@ -42,14 +42,19 @@ d = 9:25
 t = 9:18
 {p = 8; m= 7; g=5}
 p*m+g
+#this resulted in 61 as it went by multiplying 8 to 7 and then adding 5
 p*(m+g)
+#this resulted in 96 because it first addd 7 to 5 then multiplied by 8 
 2^1025
+#this resulted in in Inf because R has only a certain number it can be raised to
 -2^5067
+#this resulted in a -Inf because R only has a certain number to can be raised to and-2
 2^1025
 -2^5062
 is.na(t)
 r <- NA
 is.na(r)
+#this was assigned NA to create a NA output
 l <- N
 oi <- c(1, 2, 3, NaN, 5)
 j <- c(5, 6, 7, NULL)
