@@ -57,8 +57,10 @@ is.na(r)
 #this was assigned NA to create a NA output
 l <- N
 oi <- c(1, 2, 3, NaN, 5)
+#this will result in a NaN because the fourth spot is NaN
 j <- c(5, 6, 7, NULL)
 c <-NULL
+#this was assigned to NULL resulting in a NULL output
 u <- c(9, 11, 12)
 y <- c(13, 14, 15)
 print (u^y)
@@ -69,6 +71,7 @@ get(m, env = x, inherits = FALSE)
 as.null(2, 3, 4, NULL)
 x[4]
 as.null(2, 3, 4, NULL)
+#this created a NULL answer because as.null will always be assigned to NULL
 df <- 1:10
 3%/%4
 10%/%5
