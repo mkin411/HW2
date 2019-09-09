@@ -28,8 +28,11 @@ a <- c(1,2, 3, 4)
 (20/10)
 factor(1/2)
 a %% K
+#this results in the remaindar of a by that of K
 a %/% K
+#this results in dividing a from K
 a ^ K
+#this results in a being raised to the K power
 a %/% K
 a ^ K
 a %/% K
