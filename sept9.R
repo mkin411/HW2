@@ -1,5 +1,5 @@
 a <- c(2:14)
-b <- c("hello", "cat", "dog", "pig")
+b <- c("hello", "cat", "dog", "pig", "tacocat")
 b <- list(b)
 #columns and rows
 m <- matrix (data =1:12 ,nrow =4, ncol= 3,
@@ -11,3 +11,6 @@ ray <- array (data = 1:24, dim=c(3,4,2))
 #always rows columns, dimensions
 ray[2,3,2]
 ray [3,4,1]
+#single brackets returns objects from obj x- double bracket allows for partial matches
+data <- data[data$group == [group]], ]
+#group assigned to something in a list, and shows how it could be pulled out, matrixes refer to position, not used most
