@@ -65,3 +65,31 @@ df <- 1:10
 3%/%4
 10%/%5
 3^4
+du = "dugong"
+bd = "bottlenose dolphin"
+ar = "artic fox"
+sl ="slough"
+switcheroo.switch <- function (x) {
+  switch(x,
+          du ="dugong",
+          bd = "bottlenose dolphin",
+          ar = "artic fox",
+          "slough") 
+  }
+switcheroo.if.then ("du")
+switcheroo.if.then ("ar")
+>switcheroo.switch <- function (x) {
++   switch(x,
++           du ="dugong",
++           bd = "bottlenose dolphin",
++           ar = "artic fox",
++           "slough") 
++ }
+switcheroo.switch <- function (x) {
+  switch(x,
+          du ="dugong",
+          bd = "bottlenose dolphin",
+          ar = "artic fox",
+          "slough") 
+}
+switcheroo.if.then <- function (x) {if (x == "du") "dugong" else if (x == "bd") "bottlenose dolphin" else if (x == "ar") "artic fox" else "slough"}
