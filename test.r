@@ -1,8 +1,5 @@
 #test.r
-weight_kg <- k
-weight_kg <-k
 weight_kg <- 55
-z -> 10
 z ->10
 10 -> z
 5 -> b
@@ -106,6 +103,21 @@ switcheroo.switch <- function (x) {
 switcheroo.if.then <- function (x) {if (x == "du") "dugong" else if (x == "bd") "bottlenose dolphin" else if (x == "ar") "artic fox" else "slough"}
 fishdata <- load(file="fish_data (8).Rdata")
 NROW (fish)
+#this equals 2026
 NCOL(fish)
-f <-fish [parcel.l $group =="fish,"]$transect.id6
-
+#this equals to 23
+f <-fish$year
+f
+#function to find the year in the group of the larger dataset parcel.l
+class(f)
+#this shows the type of data of the year, that resulted in characer 
+str(fish)
+#the five data types are numeric, chracter, factor, integer, and POSIXct. 
+area_fac
+z <-fish$area_fac
+z
+class(z)
+class(z)
+l <-as.character(z)
+class(l)
+#I assigned a value to z which encompassed the fish area_fac data, then I assigned l to be the character version of z, and the class of that is a character data type
