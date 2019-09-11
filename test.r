@@ -132,4 +132,4 @@ p<-(fish)rm(t)
 p <-rm(t)(fish)
 fish$avg.DNE.m = NULL
 str(fish)
-#I first used the data frame fish then attached the column avg.DNE.m by assigning to NULL, then, in order to check the structure. 
+#I first used the data frame fish then attached the column avg.DNE.m by assigning to NULL, then, in order to check the structure, I used the command str, and saw that avg.DNE.mg was gone
