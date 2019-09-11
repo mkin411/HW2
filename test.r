@@ -5,6 +5,7 @@ weight_kg <- 55
 c(0,1,2,3,4)
 c -> c(0,1,2,4)
 p -> "hat"
+#This is also a charater assigned to p.
 2L -> K
 #this is an integer because of L, it stores it as an interger and not as a numeric object
 "happy"
@@ -17,7 +18,7 @@ a <- c(1,2, 3, 4)
 "this is amazing"
 1/2
 (20/10)
-factor(1/2)
+ff <- factor(1/2)
 a %% K
 #this results in the remaindar of a by that of K; 0 1 0 1 0 1 0 1 0 1 0 1 0
 a %/% K
@@ -124,3 +125,4 @@ p <-rm(t)(fish)
 fish$avg.DNE.m = NULL
 str(fish)
 #I first used the data frame fish then attached the column avg.DNE.m by assigning to NULL, then, in order to check the structure, I used the command str, and saw that avg.DNE.mg was gone
+#new idea 
