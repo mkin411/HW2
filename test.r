@@ -14,7 +14,9 @@ k ->3L
 3L <- k
 k -> 2L
 2L -> K
-t -> happy
+#this is an integer because of L, it stores it as an interger and not as a numeric object
+"happy""
+#this is a charcter, you do not need to assign it to a vector
 v->15.5
 v -> 15.5
 V -> 16
@@ -25,18 +27,17 @@ a <- c(1,2, 3, 4)
 (20/10)
 factor(1/2)
 a %% K
-#this results in the remaindar of a by that of K
+#this results in the remaindar of a by that of K; 0 1 0 1 0 1 0 1 0 1 0 1 0
 a %/% K
-#this results in dividing a from K
+#this results in dividing a from K; 1 1 2 2 3 3 4 4 5 5 6 6 7
 a ^ K
-#this results in a being raised to the K power
-a %/% K
-a ^ K
+#this results in a being raised to the K power; 4   9  16  25  36  49  64  81 100 121 144 169 196
 a %/% K
 a ^ K
-d -> 9:25
-d = 9:25
+a %/% K
+a ^ K
 t = 9:18
+#t is being assigned to a sequence of 10 numbers
 {p = 8; m= 7; g=5}
 p*m+g
 #this resulted in 61 as it went by multiplying 8 to 7 and then adding 5
@@ -58,6 +59,7 @@ sum(oi)
 #this sum will result in a NaN because the fourth spot is NaN
 j <- c(5, 6, 7, NULL)
 c <-NULL
+sum(j)
 #this was assigned to NULL resulting in a NULL output
 u <- c(9, 11, 12)
 y <- c(13, 14, 15)
