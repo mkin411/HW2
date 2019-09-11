@@ -69,4 +69,22 @@ unique(fish$year)
 unique(fish.no.na)
 #why did it show all the ones with na?
 #packages
-
+install.packages("data.table")
+#rtools, source everything on your script
+install.packages("tidyverse", "stringr", "plyr", "reshape2", "grid", "gridExtra", "pastecs", "lubridate")
+#For Loop for (i in 1:n) {install.packages (packs [n])}
+#from the packs 1 to the end
+#each package has a documentation attached to them
+install.packages("ggplot2")
+library(devtools)
+install.packages("devtools")
+libary("devtools")
+install.github
+#never installed 
+getwd()
+d <- read.table(file, sep ="")
+date <- scan (file, what = "character" ,skip=1, nlines=1, quiet=TRUE)
+string=
+#pull out specific, start at what position, end at what position
+yy < str_sub(date, 7,8)
+#positive integers, right to left, sub for -2, and -1 to work from left to right
