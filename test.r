@@ -64,6 +64,7 @@ sum(j)
 u <- c(9, 11, 12)
 y <- c(13, 14, 15)
 print (u^y)
+#this is my example of an operator, after assigning sets to u and y, then using the exponent function
 20%%2
 x <- c(2, 3, 4, NULL)
 e <- (2, 3, 4, NULL)
