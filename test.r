@@ -1,21 +1,13 @@
 #test.r
 weight_kg <- 55
-z ->10
 10 -> z
 5 -> b
 c(0,1,2,3,4)
-c -> [0,1,2,3,4]
-c -> {0,1,3,4}
 c -> c(0,1,2,4)
-c(0,1,2,3,4) <- c
-c -> "hat"
-c -> "this is amazing"
-k ->3L
-3L <- k
-k -> 2L
+p -> "hat"
 2L -> K
 #this is an integer because of L, it stores it as an interger and not as a numeric object
-"happy""
+"happy"
 #this is a charcter, you do not need to assign it to a vector
 v->15.5
 v -> 15.5
@@ -67,7 +59,6 @@ print (u^y)
 #this is my example of an operator, after assigning sets to u and y, then using the exponent function
 20%%2
 x <- c(2, 3, 4, NULL)
-e <- (2, 3, 4, NULL)
 get(m, env = x, inherits = FALSE)
 as.null(2, 3, 4, NULL)
 x[4]
