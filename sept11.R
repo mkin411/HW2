@@ -88,3 +88,4 @@ string=
 #pull out specific, start at what position, end at what position
 yy < str_sub(date, 7,8)
 #positive integers, right to left, sub for -2, and -1 to work from left to right
+load(file="ISIIS201405291242.txt")
