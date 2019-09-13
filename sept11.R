@@ -95,7 +95,7 @@ load("my_data")
 my_data
 sum(c(TRUE, FALSE, TRUE, FALSE))
 my_data2 <- read.table("ISIIS201405291242.txt", 
-                      sep ="\t", header = TRUE, dec =".", skip = 10)                      
+                      sep ="\t", header = TRUE, dec =".", skip = 10)   
 my_data2
 #files that have a header, 10 lines of text before the table, not able to read in
 my_data2
@@ -117,7 +117,26 @@ typeof(v)
 class(v)
 m <-matrix(data=1:12, nrow = 4, ncol = 3,
   dimnames=list(c("rw1", "rw2", "rw3", "rw4"),
-               c("c1", "c2", "c3"))
+               c("c1", "c2", "c3")))
 
 a.ray <- array(data = 1:24, dim=c(3,4,2))
 a.ray
+
+mm <-matrix(data=1:12, nrow = 4, ncol = 3, dimnames = list(c("r1", "r2", "r3", "r4"), c("c1","c2","c3")))
+mm
+m
+attributes(m)
+#the properties associated with the objects in this matrix
+dim(mm)
+dimnames(mm)
+dim(m) <-NULL
+m
+a.ray <- array(data = 1:24, dim=c(3,4))
+bb <-1:24
+bb
+a.ray 
+a.ray==b
+all.equal(a,b)
+all.equal(a.ray,bb)
+identical(a.ray,bb)
+dim(bb)<- c(3,4)
