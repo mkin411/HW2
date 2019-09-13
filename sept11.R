@@ -110,3 +110,14 @@ head(my_data2)
 write.txt(deck, file = "ISII201405291242.txt", row.names =FALSE)
 write.csv(file = "ISII201405291242.csv", row.names = FALSE)
 df
+v<- c(.250, .350, .450, .550, list(.650, .750, .850),recursive =TRUE)
+V
+v
+typeof(v)
+class(v)
+m <-matrix(data=1:12, nrow = 4, ncol = 3,
+  dimnames=list(c("rw1", "rw2", "rw3", "rw4"),
+               c("c1", "c2", "c3"))
+
+a.ray <- array(data = 1:24, dim=c(3,4,2))
+a.ray
