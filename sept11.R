@@ -93,6 +93,20 @@ load(file="ISIIS201405291242.txt")
 my_data <- read.delim("ISIIS201405291242.txt")
 load("my_data")
 my_data
-
-
-                      
+sum(c(TRUE, FALSE, TRUE, FALSE))
+my_data2 <- read.table("ISIIS201405291242.txt", 
+                      sep ="\t", header = TRUE, dec =".", skip = 10)                      
+my_data2
+#files that have a header, 10 lines of text before the table, not able to read in
+my_data2
+my_data2
+df <- data.frame(bug =c("spider", "ant", "fly"),
+                 phylum =c("Insecta", "Insecta", "Insecta"), age =c(1, 2, 3))
+df
+listof(df)
+class(df)
+str(df)
+head(my_data2)
+write.txt(deck, file = "ISII201405291242.txt", row.names =FALSE)
+write.csv(file = "ISII201405291242.csv", row.names = FALSE)
+df
