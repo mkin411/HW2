@@ -89,3 +89,10 @@ string=
 yy < str_sub(date, 7,8)
 #positive integers, right to left, sub for -2, and -1 to work from left to right
 load(file="ISIIS201405291242.txt")
+#read a local file, named "ISIIS201405291242.txt"
+my_data <- read.delim("ISIIS201405291242.txt")
+load("my_data")
+my_data
+
+
+                      
