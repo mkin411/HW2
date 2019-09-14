@@ -255,3 +255,39 @@ deckof
 #now working with ch 14 HoPR- R Notations
 deal(deckof)
 head(deckof)
+deckof[ , ]
+#spaces isolate all the information, in rows and columns
+head25<-head(deckof, 25)
+head25
+deckof[1,1]
+deckof[2,3]
+deckof[2, c(1,2,3)]
+deckof[1:2, 1:2]
+deckof[1:2,1, drop=FALSE]
+deckof[-1, 1:3]
+deckof[-(2:52), 1:3]
+deckof[1, c(TRUE,TRUE, FALSE)]
+deal <-function(cards){cards[1, ]}
+deal
+deal(deckof)
+shuffle(deckof)
+deck4<-deckof[random, ]
+deck4
+#how to randomize the deck
+head(deck4)
+shuffle<-function(cards)
+  random=sample(1:52, size=52)
+cards[random, 1]}
+#cards are not defined
+deckof$value
+mean(deckof)
+mean(deckof$value)
+deckof$new<-1:52
+head(deckof)
+deckof$new<-NULL
+head(deckof)
+deckof[c(13,26,39,52), ]
+deckof[c(13,26,39, 52), 3]
+deckof[c(13,26,39,52), 3]<-c(14,14,14,14)
+deckof 
+deckof[c(13,26,39,52), 3]
