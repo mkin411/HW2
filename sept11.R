@@ -291,3 +291,17 @@ deckof[c(13,26,39, 52), 3]
 deckof[c(13,26,39,52), 3]<-c(14,14,14,14)
 deckof 
 deckof[c(13,26,39,52), 3]
+deckof$face
+deckof$face =="seven"
+sum(deckof$face == "ace")
+deck6<-deckof
+deck6$value<-0
+head(deck6, 13)
+deck6$suit == "hearts"
+deck6$value[deck6$suit == "hearts"]
+deck6$value[deck6$suit == "hearts"] <-1
+deck6$value
+deck6$value[deck6$suit == "hearts"]
+deck6[deck6$face =="queen", ]
+deck6[deck6$face =="spades", ]
+#let off on chapter 5 HoPR page87 and on programs for URL:https://rstudio-education.github.io/hopr/programs.html
