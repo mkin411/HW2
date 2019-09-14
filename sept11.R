@@ -140,3 +140,73 @@ all.equal(a,b)
 all.equal(a.ray,bb)
 identical(a.ray,bb)
 dim(bb)<- c(3,4)
+deal(deck)
+deck2 <-1:52            
+deck
+createDeck <- function(totalNumOfDecks = 2)
+{
+  suits <- c("Diamonds", "Clubs", "Hearts", "Spades")
+  cards <- c("Ace", "Deuce", "Three", "Four","Five", 
+             "Six", "Seven", "Eight", "Nine", "Ten", 
+             "Jack", "Queen", "King")
+  values <- c(0,2,3,4,5,
+              6,7,8,9,10,
+              10,10,10)
+  
+  deck <- data.frame(Suit=character(0), Card=character(0), Value=numeric(0))
+  
+  numOfDecks = 1
+  
+  while (numOfDecks <= totalNumOfDecks){
+    for (i in suits){
+      for (j in cards){
+        deck <- rbind.data.frame(deck, cbind.data.frame(j, i, values[match(j, cards)]))
+      }
+    }
+    numOfDecks = numOfDecks + 1
+  }
+  
+  print(deck)
+}
+array(deck)
+createDeck 
+deck4 <-deck[1:52, ]
+deck4
+head(deck4)
+random <-sample(1:52, size=52)
+random
+deck$value
+#changing values in place
+vec <- c(0,0,0,0,0,0)
+vec
+vec[1]<-1000
+vec
+vec
+vec(c(1,3,5)) <-1
+#the above is wrong because you need to use brackets in order to isolate the alternations, and the following elements are not the same length; see below
+vec[c(1,3,5)]<-c(1,1,1)
+vec
+vec[4:6] <-vec[4:6] + 1
+vec
+deck2$new<-1:52
+deck2$new
+#following R basics found on URL https://rstudio-education.github.io/hopr/r-objects.html
+die5<- c(1, 2, 3, 4, 5, 6)
+die5
+names(die5)<-c("one","two", "three", "four", "five","six")
+names(die5)
+attributes(die5)
+die5
+die5 + 1
+names(die5)<- c("uno", "dos", "tres", "quatro", "cinco", "seis")
+names(die5)
+names(die5)<-NULL
+names(die5)
+die5
+dim(die5)<- c(2, 3)
+die5
+dim(die5)<-c(3,2,1)
+dim(die5)
+die5
+dim(die5)<-c(1,2,3)
+die5
