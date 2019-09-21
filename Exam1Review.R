@@ -132,3 +132,14 @@ class(fg)
 class(gn)
 #changed from factor to character
 #uploading test1 data
+load(file=("test1_data.Rdata"))
+#it needs to be uploaded accurately
+test1data <- read.table("test1_data.Rdata", 
+                       sep ="\t", header = TRUE, dec =".")
+read.table("test1_data.Rdata")
+#problems uploading the test1 data
+load(file="test1_data.Rdata")
+read.table("test1_data.Rdata")
+#problems continuing with loading test 1 data
+test1data
+#continued problems loading test 1 data
