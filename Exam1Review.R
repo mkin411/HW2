@@ -120,3 +120,14 @@ gf<-fish$year
 typeof(gf)
 #character is the year
 str(fish)
+#the five types of data in the data frame are numeric, character, int, factor, and posxitic
+fish$avg.DNE.m<-NULL
+str(fish)
+#no avg.DNE.m
+fg<-fish$area_fac
+class(fg)
+is.character(fg)
+gn<-as.character(fg)
+class(fg)
+class(gn)
+#changed from factor to character
