@@ -104,4 +104,19 @@ fa>=tt
 #example of a exponent operator
 365%/%12
 #example of a integer divison
-ifelse
+ifelse.if.then<-function(x){if (x == "a") "pycnigonad" else if (x =="b") "sea fan" else if (x =="c") "octocoral" else "damselfish"}
+ifelse.if.then("a")
+if.then<- function(x){switch(x, a="pycnigonad", b="sea fan", c="octocoral", "damselfish")}
+if.then("b")
+#you need to add " when printing the resulting character, switch is shorter , it created the elements
+ifelse(c(TRUE, FALSE, TRUE, FALSE,TRUE),a,b)
+#do we need to find T/F other examples for this
+fishdata <- load(file="fish_data (8).Rdata")
+NCOL(fish) 
+NROW(fish)
+typeof$year
+type$year
+gf<-fish$year
+typeof(gf)
+#character is the year
+str(fish)
