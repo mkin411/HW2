@@ -57,3 +57,51 @@ ju*(hy+fr)
 yu<-(c(1,2,3,4,NA))
 sum(yu)
 #this operation, and then sum of resulted in a value of NA, because there was a number missing
+li<-list(1,2,3)
+li[[1]]<-NULL
+li$tt
+#this resulted in NULL, because when making an array, pulling out the first value and having it equal to NULL then multiplying it by tt, resulted in an undefined value
+tuvu <-array(1:3, c(2,4))
+tuvu
+#recycle 1:3, 2 2/3 times
+phygla<- c(12,13,14)
+glabuh<-c(15,16,17,18,19,20)
+vc <- array(c(phygla,glabuh),dim = (3,3,2))
+vc <- array(c(phygla,glabuh),dim = c(3,3,2))
+vc
+recycle<- c(1,2,3,4)
+litter<-c(5,6,7,8,9,10,11,NULL)
+inreality<-array(c(recycle,litter),dim =c(3,3,2))
+inreality
+inreality[[3,1,2]]
+#working on array-side note
+is.nan(inreality)
+litter2<-c(5,6,7,NA)
+litter2[4]
+sum(litter2[4])
+is.nan(sum(litter2[4]))
+red<-list(c(1,2,3,NaN))
+red[4]
+blue<-c(1,2,3,NULL)
+blue[4]
+1/0 - 1/0
+#this results in NaN because it is not a number
+v<-(10/0)
+v
+vd<-(10/0)
+v-vd
+#this creates the same result
+atomticvector<-c(25,26,27)
+atomicobject<-c(35,36,37)
+fa<-atomticvector+atomicobject
+fa
+#this is an example of my own operator
+fa>=tt
+#another example of a relational operator
+34%%3
+#example of a modulus operator
+25^2
+#example of a exponent operator
+365%/%12
+#example of a integer divison
+ifelse
