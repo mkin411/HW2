@@ -131,3 +131,4 @@ gn<-as.character(fg)
 class(fg)
 class(gn)
 #changed from factor to character
+#uploading test1 data
