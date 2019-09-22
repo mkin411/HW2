@@ -85,8 +85,8 @@ getwd()
 d <- read.table(file, sep ="")
 date <- scan (file, what = "character" ,skip=1, nlines=1, quiet=TRUE)
 string=
-#pull out specific, start at what position, end at what position
-yy < str_sub(date, 7,8)
+  #pull out specific, start at what position, end at what position
+  yy < str_sub(date, 7,8)
 #positive integers, right to left, sub for -2, and -1 to work from left to right
 load(file="ISIIS201405291242.txt")
 #read a local file, named "ISIIS201405291242.txt"
@@ -95,7 +95,7 @@ load("my_data")
 my_data
 sum(c(TRUE, FALSE, TRUE, FALSE))
 my_data2 <- read.table("ISIIS201405291242.txt", 
-                      sep ="\t", header = TRUE, dec =".", skip = 10)   
+                       sep ="\t", header = TRUE, dec =".", skip = 10)   
 my_data2
 #files that have a header, 10 lines of text before the table, not able to read in
 my_data2
@@ -116,8 +116,8 @@ v
 typeof(v)
 class(v)
 m <-matrix(data=1:12, nrow = 4, ncol = 3,
-  dimnames=list(c("rw1", "rw2", "rw3", "rw4"),
-               c("c1", "c2", "c3")))
+           dimnames=list(c("rw1", "rw2", "rw3", "rw4"),
+                         c("c1", "c2", "c3")))
 
 a.ray <- array(data = 1:24, dim=c(3,4,2))
 a.ray
@@ -305,3 +305,4 @@ deck6$value[deck6$suit == "hearts"]
 deck6[deck6$face =="queen", ]
 deck6[deck6$face =="spades", ]
 #let off on chapter 5 HoPR page87 and on programs for URL:https://rstudio-education.github.io/hopr/programs.html
+#practice with if, else statements
