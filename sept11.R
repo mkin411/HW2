@@ -306,3 +306,8 @@ deck6[deck6$face =="queen", ]
 deck6[deck6$face =="spades", ]
 #let off on chapter 5 HoPR page87 and on programs for URL:https://rstudio-education.github.io/hopr/programs.html
 #practice with if, else statements
+if.then2<-function(x){switch(x, a="baby", b="father", c="mother", "brother")}
+if.then2("b")
+#you need to use parentheses instead of brackets because it pulls out the listed value, brackets are used for arrays
+if.then3<-function(x){if(x =="a") "baby" else if (x =="b") "father" else if (x =="c") "mother" else "brother"}
+if.then3("c")
