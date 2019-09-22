@@ -144,3 +144,5 @@ read.table("test1_data.Rdata")
 test1data
 #continued problems loading test 1 data
 test1data2<-load(file="test1_data.Rdata")
+loadfile="test1_data.RData”)
+
