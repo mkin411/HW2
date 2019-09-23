@@ -33,3 +33,4 @@ vf$date3<-date2
 head(vf)
 vf$min<-as.numeric(str_sub(vf$Time, 4,5))
 head(vf)
+
