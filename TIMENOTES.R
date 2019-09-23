@@ -33,4 +33,16 @@ vf$date3<-date2
 head(vf)
 vf$min<-as.numeric(str_sub(vf$Time, 4,5))
 head(vf)
+head(vf)
+dr<-str_sub(string = date2, start=1, end=2)
+library(stringr)
+vf$hour<-as.numeric(str_sub(string =vf$Time, start = 1, end = 2))
+head(d$dateTime)
+vf$mintue<-as.numeric(str_sub(string = vf$Time, start=4, end=5))
+vf$secs<-as.numeric(str_sub(string = vf$Time, start = -5, end = -1))
+date<-str_c(dr,day,year, sep = "/")
+vf$time<-str_c(vf$hour, vf$minute,vf$secs, sep=":'")
+vf$dateTime<-str_c(vf$date, vf$time, sep = " ")
+vf$dateTime<-as.POSIXct(strptime(x=vf$dateTime, format = "%m/%d/%y %H:%M:%S", tz="America/New_York"))
+#time, %M=mintue, %m=, date/time 
 
