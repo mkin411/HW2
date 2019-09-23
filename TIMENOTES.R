@@ -37,12 +37,28 @@ head(vf)
 dr<-str_sub(string = date2, start=1, end=2)
 library(stringr)
 vf$hour<-as.numeric(str_sub(string =vf$Time, start = 1, end = 2))
-head(d$dateTime)
-vf$mintue<-as.numeric(str_sub(string = vf$Time, start=4, end=5))
+vf$minute<-as.numeric(str_sub(string = vf$Time, start=4, end=5))
+head(vf$minute)
 vf$secs<-as.numeric(str_sub(string = vf$Time, start = -5, end = -1))
 date<-str_c(dr,day,year, sep = "/")
-vf$time<-str_c(vf$hour, vf$minute,vf$secs, sep=":'")
+vf$date <- date
+head(vf)
+vf$time<-str_c(vf$hour, vf$minute,vf$secs, sep=":")
+head(vf$time)
 vf$dateTime<-str_c(vf$date, vf$time, sep = " ")
+head(vf$dateTime)
 vf$dateTime<-as.POSIXct(strptime(x=vf$dateTime, format = "%m/%d/%y %H:%M:%S", tz="America/New_York"))
 #time, %M=mintue, %m=, date/time 
+head(vf$dateTime)
+str(vf$dateTime)
+#needed to assign a value to date
+#installing excel files
+install.packages("openxlsx")
+library("openxlsx")
+#x<- read.table(file = 'Aurelia_SEAMAP_2012-2018_30minCell.csv" ,,sep =",", header =T, stringsAsFactors=F) )
+#function does not work
+#need to save it as a csv file, have to do it somewhere else
+#once the data is uploaded
+#example datesets to work with Wednesday, use csv for excel files
+#practice all wednesday
 
