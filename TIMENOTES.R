@@ -49,6 +49,9 @@ vf$dateTime<-str_c(vf$date, vf$time, sep = " ")
 head(vf$dateTime)
 vf$dateTime<-as.POSIXct(strptime(x=vf$dateTime, format = "%m/%d/%y %H:%M:%S", tz="America/New_York"))
 #time, %M=mintue, %m=, date/time 
+vf$dateTime<-vf$dateTime - time.zone.change * 3600
+#different time zones based, need to assigne time, set time zone
+#you can also use attributes, did you assign anything to time changes
 head(vf$dateTime)
 str(vf$dateTime)
 #needed to assign a value to date
