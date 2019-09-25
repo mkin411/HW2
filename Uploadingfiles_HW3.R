@@ -51,3 +51,4 @@ date9<-scan(file = 'Bioassay_Day1 - Sheet1.csv', what = "numeric",skip = 5, nlin
 date9
 #changing from character to numeric has not done anything.
 
+
