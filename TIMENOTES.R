@@ -8,7 +8,7 @@ library("stringr")
 #wil,l recycle all arguments, extract froma sentence or a vector
 date2<-date[2]
 date2
-#assigns the 2nd spae as the whole date 
+#assigns the 2nd space as the whole date 
 #str_sub extracts very specific from date
 dr<-str_sub(string = date2, start=1, end=2)
 dr
@@ -67,6 +67,8 @@ library("openxlsx")
 #str_c joins two or more vector element-wiese into a single character vector
 ?strptime
 #Date time conversions; turns character representations into an object of class "POSIXIt", how to isolate mins, hours, seconds
+#loaded Aurelia.csv file
+mydata3 = read.csv("Aurelia_SEAMAP_2012-2018_30minCell.csv")
 
 
 
