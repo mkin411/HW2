@@ -61,5 +61,10 @@ library("openxlsx")
 #once the data is uploaded
 #example datesets to work with Wednesday, use csv for excel files
 #practice all wednesday
-
+?str_sub
+#wil,l recycle all arguments, extract froma sentence or a vector
+?str_c
+#str_c joins two or more vector element-wiese into a single character vector
+?strptime
+#Date time conversions; turns character representations into an object of class "POSIXIt", how to isolate mins, hours, seconds
 
