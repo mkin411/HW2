@@ -42,5 +42,12 @@ PbTx3
 bioassay$X.6
 PbTxCA<-bioassay$X.6
 PbTxCA
-
+date<-scan(file = 'Bioassay_Day1 - Sheet1.csv', what = "character",skip = 5, nlines = 4, quiet = TRUE)
+date
+?nlines
+??nlines
+#what is nlines?, number of lines?
+date9<-scan(file = 'Bioassay_Day1 - Sheet1.csv', what = "numeric",skip = 5, nlines = 4, quiet = TRUE)
+date9
+#changing from character to numeric has not done anything.
 
